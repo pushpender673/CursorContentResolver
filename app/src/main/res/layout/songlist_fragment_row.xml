@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:paddingLeft="4dp"
+        android:text="20"
+        android:layout_width="29dp"
+        android:layout_height="70dp"
+        android:id="@+id/s_no"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/Song_Llayout"
+        android:layout_width="330dp">
+
+        <ImageView
+            android:padding="2sp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/AlbumArt"
+            android:src="@drawable/ps_music_icon"/>
+
+        <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:id="@+id/SongDetails_Llayout">
+
+            <LinearLayout
+                android:layout_width="255dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/song_name"
+                    android:textSize="20dp"
+                    android:text="Song Name "
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="1:20"
+                    android:id="@+id/duration" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="255dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="122.5dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/artist"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:text="Artist_name"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="122.5dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/albumname"
+                    android:textSize="15sp"
+                    android:text="Album_name"
+                    android:layout_gravity="center_horizontal|left"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="top"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_menu_moreoverflow_normal_holo_light"/>
+</LinearLayout>
